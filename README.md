@@ -2,10 +2,14 @@
 
 OpenTraffic is an open community for traffic intelligence.
 
-We currently organize our public work around two major repositories:
+We currently organize our public work around ajor repositories:
 
 - [OpenTraffic-Vision](https://github.com/OpenTraffic-Team/OpenTraffic-Vision)
-- [OpenTraffic-Control](https://github.com/OpenTraffic-Team/OpenTraffic-Control)
+[- [OpenTraffic-Control](
+（https://github.com/OpenTraffic-Team/opentraffic-tsc-agent）
+（https://github.com/OpenTraffic-Team/opentraffic-tsc-skills）
+（https://github.com/OpenTraffic-Team/opentraffic-tsc-engine）
+（https://github.com/OpenTraffic-Team/opentraffic-ops) -]
 
 ## OpenTraffic-Vision
 
