@@ -59,10 +59,9 @@ flowchart TD
 # ⚙️ Core Platform
 
 ## 🧩 OpenTraffic-Ops (Platform Layer)
-
+👉 [GitHub Repository](https://github.com/OpenTraffic-Team/opentraffic-ops)
 统一系统运行底座，负责全局调度与基础设施能力。
 
-### Responsibilities
 
 * Agent 生命周期管理（启动 / 停止 / 调度）
 * 模型与服务注册中心
@@ -191,6 +190,9 @@ opentraffic-perception-engine
 ---
 
 # 📦 Repositories
+### 💻  OPS
+* [https://github.com/OpenTraffic-Team/opentraffic-tsc-ops](https://github.com/OpenTraffic-Team/opentraffic-ops)
+
 
 ### 🚦 Control
 
