@@ -8,9 +8,9 @@
 
 # 🚦 OpenTraffic
 
-### Intelligent Transportation Open Infrastructure Community
+### 智能交通开源基础设施社区
 
-构建面向未来城市交通的 **感知 · 决策 · 控制 · 部署一体化基础设施**
+为未来城市交通构建一体化的 **感知 · 决策 · 控制 · 部署基础设施**。
 
 </div>
 
@@ -23,16 +23,16 @@
 
 ---
 
-# 🌍 总览
+# 🌍 概述
 
-OpenTraffic 是一个面向智能交通系统的开源基础设施项目，致力于构建：
+OpenTraffic 是面向智能交通系统的开源基础设施项目，专注于构建：
 
-* 🚗 交通感知（Perception）
-* 🚦 信号控制（Control）
-* 🧠 强化学习与智能决策（RL / Agent）
-* ⚙️ 边缘计算与系统部署（Ops）
+* 🚗 交通感知
+* 🚦 信号控制
+* 🧠 强化学习与智能决策 (RL / Agent)
+* ⚙️ 边缘计算与系统部署 (Ops)
 
-整体采用**分层 Agent 架构 + 双体系（感知 / 控制）设计**。
+基于**分层 Agent 架构，感知与控制双栈并行**。
 
 ---
 
@@ -40,17 +40,21 @@ OpenTraffic 是一个面向智能交通系统的开源基础设施项目，致�
 
 ## 🧭 系统设计
 
+<div align="center">
+  <img src="CN.png" alt="OpenTraffic 架构图" width="900">
+</div>
+
 ```mermaid
 flowchart TD
-    OPS[OpenTraffic-Ops<br/>Platform Layer]
+    OPS[OpenTraffic-Ops<br/>平台层]
 
-    subgraph CONTROL[Traffic Control Stack]
+    subgraph CONTROL[交通控制栈]
         CA[opentraffic-tsc-agent]
         CS[opentraffic-tsc-skills]
         CE[opentraffic-tsc-engine]
     end
 
-    subgraph PERCEPTION[Traffic Perception Stack]
+    subgraph PERCEPTION[交通感知栈]
         PA[opentraffic-perception-agent]
         PS[opentraffic-perception-skills]
         PE[opentraffic-perception-engine]
@@ -64,23 +68,23 @@ flowchart TD
 
 # ⚙️ 核心平台
 
-## 🧩 OpenTraffic-Ops (Platform Layer)
-👉 [GitHub Repository](https://github.com/OpenTraffic-Team/opentraffic-ops)
-统一系统运行底座，负责全局调度与基础设施能力。
+## 🧩 OpenTraffic-Ops (平台层)
+👉 [GitHub 仓库](https://github.com/OpenTraffic-Team/opentraffic-ops)
+统一的系统运行时底座，负责全局调度与基础设施能力。
 
 * Agent 生命周期管理（启动 / 停止 / 调度）
-* 模型与服务注册中心
+* 模型与服务注册
 * 任务编排与运行时管理
 * 数据流与消息系统
-* 边缘-云协同执行
+* 边云协同执行
 
 ---
 
-# 🚦 信号控制体系
+# 🚦 交通控制栈
 
 ## 🤖 opentraffic-tsc-agent
 
-👉 [GitHub Repository](https://github.com/OpenTraffic-Team/opentraffic-tsc-agent)
+👉 [GitHub 仓库](https://github.com/OpenTraffic-Team/opentraffic-tsc-agent)
 
 * 多路口协同控制
 * Agent 决策编排
@@ -91,18 +95,18 @@ flowchart TD
 
 ## 🛠 opentraffic-tsc-skills
 
-👉 [GitHub Repository](https://github.com/OpenTraffic-Team/opentraffic-tsc-skills)
+👉 [GitHub 仓库](https://github.com/OpenTraffic-Team/opentraffic-tsc-skills)
 
 * 相位切换策略
-* 排队长度 / 流量计算
-* reward / cost 设计
+* 排队长度 / 交通流量计算
+* 奖励 / 代价设计
 * 安全约束与动作规则
 
 ---
 
 ## 🧠 opentraffic-tsc-engine
 
-👉 [GitHub Repository](https://github.com/OpenTraffic-Team/opentraffic-tsc-engine)
+👉 [GitHub 仓库](https://github.com/OpenTraffic-Team/opentraffic-tsc-engine)
 
 * 强化学习 / 规则 / 混合控制模型
 * 状态与动作空间定义
@@ -111,44 +115,44 @@ flowchart TD
 
 ---
 
-# 👁️ 交通感知体系
+# 👁️ 交通感知栈
 
 ## 🤖 opentraffic-perception-agent
 
-👉 [GitHub Repository](https://github.com/OpenTraffic-Team/opentraffic-perception-agent)
+👉 [GitHub 仓库](https://github.com/OpenTraffic-Team/opentraffic-perception-agent)
 
 * 多模型协同调度
 * 场景级感知任务执行
 * 结构化交通状态输出
-* Ops 协同通信
+* Ops 通信
 
 ---
 
 ## 🛠 opentraffic-perception-skills
 
-👉 [GitHub Repository](https://github.com/OpenTraffic-Team/opentraffic-perception-skills)
+👉 [GitHub 仓库](https://github.com/OpenTraffic-Team/opentraffic-perception-skills)
 
-* 目标跟踪与 ID 管理
+* 目标追踪与 ID 管理
 * 轨迹重建
-* 流量 / 速度统计
+* 交通流量 / 速度统计
 * 事件检测（拥堵 / 事故）
 
 ---
 
 ## 🧠 opentraffic-perception-engine
 
-👉 [GitHub Repository](https://github.com/OpenTraffic-Team/opentraffic-perception-engine)
+👉 [GitHub 仓库](https://github.com/OpenTraffic-Team/opentraffic-perception-engine)
 
-* 目标检测 / 跟踪 / 分类模型
-* 多摄像头融合推理
-* 边缘端轻量模型（TIR 等）
+* 检测 / 跟踪 / 分类模型
+* 多相机融合推理
+* 边缘轻量模型 (TIR 等)
 * 统一推理接口
 
 ---
 
 # 🔁 数据流
 
-## 🚦 Control Pipeline
+## 🚦 控制管线
 
 ```text
 OpenTraffic-Ops
@@ -160,7 +164,7 @@ opentraffic-tsc-skills
 opentraffic-tsc-engine
 ```
 
-## 👁️ Perception Pipeline
+## 👁️ 感知管线
 
 ```text
 OpenTraffic-Ops
@@ -176,35 +180,35 @@ opentraffic-perception-engine
 
 # 🧠 设计理念
 
-* 分层解耦（Ops / Agent / Skills / Engine）
-* 感知与控制对称架构设计
-* 小模型优先（Edge-friendly Engine Layer）
-* Agent 负责智能编排，不直接执行底层计算
-* Ops 作为统一系统操作底座
+* 分层解耦 (Ops / Agent / Skills / Engine)
+* 感知与控制对称架构
+* 小模型优先 (边缘友好的引擎层)
+* Agent 负责智能编排，不涉底层计算
+* Ops 统一系统运行底座
 
 ---
 
 # 🚀 亮点
 
-* 🧠 Agent-based traffic intelligence
-* ⚡ Real-time edge deployment
-* 🔄 RL-based signal optimization
-* 👁️ Multi-camera perception fusion
-* 🧩 Modular plugin architecture
+* 🧠 基于 Agent 的交通智能
+* ⚡ 实时边缘部署
+* 🔄 基于强化学习的信号优化
+* 👁️ 多相机感知融合
+* 🧩 模块化插件架构
 
 ---
 
-# 📦 仓库列表
+# 📦 仓库
 
 ### 💻 OPS
 * [https://github.com/OpenTraffic-Team/opentraffic-ops](https://github.com/OpenTraffic-Team/opentraffic-ops)
 
-### 🚦 Control
+### 🚦 控制
 * [https://github.com/OpenTraffic-Team/opentraffic-tsc-agent](https://github.com/OpenTraffic-Team/opentraffic-tsc-agent)
 * [https://github.com/OpenTraffic-Team/opentraffic-tsc-skills](https://github.com/OpenTraffic-Team/opentraffic-tsc-skills)
 * [https://github.com/OpenTraffic-Team/opentraffic-tsc-engine](https://github.com/OpenTraffic-Team/opentraffic-tsc-engine)
 
-### 👁️ Perception
+### 👁️ 感知
 * [https://github.com/OpenTraffic-Team/opentraffic-perception-agent](https://github.com/OpenTraffic-Team/opentraffic-perception-agent)
 * [https://github.com/OpenTraffic-Team/opentraffic-perception-skills](https://github.com/OpenTraffic-Team/opentraffic-perception-skills)
 * [https://github.com/OpenTraffic-Team/opentraffic-perception-engine](https://github.com/OpenTraffic-Team/opentraffic-perception-engine)
@@ -213,7 +217,7 @@ opentraffic-perception-engine
 
 # 🌐 社区
 
-OpenTraffic 欢迎以下方向的贡献者：
+OpenTraffic 欢迎以下领域的贡献者：
 
 * 🚗 智能交通算法研究者
 * 🧠 强化学习开发者
@@ -223,6 +227,6 @@ OpenTraffic 欢迎以下方向的贡献者：
 
 ---
 
-# 📬 联系
+# 📬 联系我们
 
-如需合作或贡献代码，请联系 OpenTraffic 团队。
+如需合作或贡献，请联系 OpenTraffic 团队。
