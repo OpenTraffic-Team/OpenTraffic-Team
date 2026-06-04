@@ -44,26 +44,6 @@ Built on a **layered Agent architecture with dual stacks (Perception / Control)*
   <img src="EN.png" alt="OpenTraffic Architecture" width="900">
 </div>
 
-```mermaid
-flowchart TD
-    OPS[OpenTraffic-Ops<br/>Platform Layer]
-
-    subgraph CONTROL[Traffic Control Stack]
-        CA[opentraffic-tsc-agent]
-        CS[opentraffic-tsc-skills]
-        CE[opentraffic-tsc-engine]
-    end
-
-    subgraph PERCEPTION[Traffic Perception Stack]
-        PA[opentraffic-perception-agent]
-        PS[opentraffic-perception-skills]
-        PE[opentraffic-perception-engine]
-    end
-
-    OPS --> CA --> CS --> CE
-    OPS --> PA --> PS --> PE
-```
-
 ---
 
 # ⚙️ Core Platform
