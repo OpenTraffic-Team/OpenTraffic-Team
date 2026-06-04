@@ -40,6 +40,10 @@ Built on a **layered Agent architecture with dual stacks (Perception / Control)*
 
 ## 🧭 System Design
 
+<div align="center">
+  <img src="EN.png" alt="OpenTraffic Architecture" width="900">
+</div>
+
 ```mermaid
 flowchart TD
     OPS[OpenTraffic-Ops<br/>Platform Layer]
