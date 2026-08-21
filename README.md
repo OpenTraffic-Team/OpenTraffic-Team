@@ -211,3 +211,9 @@ OpenTraffic welcomes contributors in the following areas:
 # 📬 Contact
 
 For collaboration or contributions, please reach out to the OpenTraffic team.
+
+<div align="center">
+
+📧 Email: **partners@opentraffic.cn**
+
+<br/>
