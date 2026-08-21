@@ -13,13 +13,13 @@
 Building an integrated **Perception · Decision · Control · Deployment infrastructure** for future urban mobility.
 
 </div>
+<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Traffic-AI-blue" />
-  <img src="https://img.shields.io/badge/Architecture-Agent%20Based-green" />
-  <img src="https://img.shields.io/badge/Stack-Perception%20%7C%20Control-orange" />
-  <img src="https://img.shields.io/badge/Status-Active-success" />
-</p>
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Models-FFD21E?style=for-the-badge)](https://huggingface.co/OpenTraffic)
+[![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/OpenTraffic_CN)
+
+</div>
 
 ---
 
