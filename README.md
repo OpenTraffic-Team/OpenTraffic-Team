@@ -18,6 +18,7 @@ Building an integrated **Perception · Decision · Control · Deployment infrast
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
 [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Models-FFD21E?style=for-the-badge)](https://huggingface.co/OpenTraffic)
 [![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/OpenTraffic_CN)
+[![WeChat](https://img.shields.io/badge/WeChat%20Group-07C160?style=for-the-badge&logo=wechat&logoColor=white)](https://github.com/OpenTraffic-Team/OpenTraffic-TSC-Engine/blob/main/pic/wechat.jpg)
 
 </div>
 
