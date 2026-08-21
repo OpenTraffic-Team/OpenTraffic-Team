@@ -201,3 +201,9 @@ OpenTraffic 欢迎以下领域的贡献者：
 # 📬 联系我们
 
 如需合作或贡献，请联系 OpenTraffic 团队。
+
+<div align="center">
+
+📧 Email: **partners@opentraffic.cn**
+
+<br/>
