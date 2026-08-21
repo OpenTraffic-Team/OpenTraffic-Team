@@ -37,36 +37,6 @@ OpenTraffic 是面向智能交通系统的开源基础设施项目，专注于�
 
 ---
 
-# 🧱 架构
-
-## 🧭 系统设计
-
-<div align="center">
-  <img src="CN.png" alt="OpenTraffic 架构图" width="900">
-</div>
-
-```mermaid
-flowchart TD
-    OPS[OpenTraffic-Ops<br/>平台层]
-
-    subgraph CONTROL[交通控制栈]
-        CA[opentraffic-tsc-agent]
-        CS[opentraffic-tsc-skills]
-        CE[opentraffic-tsc-engine]
-    end
-
-    subgraph PERCEPTION[交通感知栈]
-        PA[opentraffic-perception-agent]
-        PS[opentraffic-perception-skills]
-        PE[opentraffic-perception-engine]
-    end
-
-    OPS --> CA --> CS --> CE
-    OPS --> PA --> PS --> PE
-```
-
----
-
 # ⚙️ 核心平台
 
 ## 🧩 OpenTraffic-Ops (平台层)
