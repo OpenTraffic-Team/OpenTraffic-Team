@@ -13,13 +13,14 @@
 为未来城市交通构建一体化的 **感知 · 决策 · 控制 · 部署基础设施**。
 
 </div>
+<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Traffic-AI-blue" />
-  <img src="https://img.shields.io/badge/Architecture-Agent%20Based-green" />
-  <img src="https://img.shields.io/badge/Stack-Perception%20%7C%20Control-orange" />
-  <img src="https://img.shields.io/badge/Status-Active-success" />
-</p>
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](LICENSE)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Models-FFD21E?style=for-the-badge)](https://huggingface.co/OpenTraffic)
+[![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/OpenTraffic_CN)
+[![WeChat](https://img.shields.io/badge/WeChat%20Group-07C160?style=for-the-badge&logo=wechat&logoColor=white)](https://github.com/OpenTraffic-Team/OpenTraffic-TSC-Engine/blob/main/pic/wechat.jpg)
+
+</div>
 
 ---
 
